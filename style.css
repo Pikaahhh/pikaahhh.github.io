@@ -1,0 +1,141 @@
+.menu-bar {
+    z-index: 998;
+    position: sticky;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(130, 160, 0, 0.5);
+    border-color: rgba(99, 121, 0, 0.7);
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    padding:10px;
+}
+@font-face {
+    font-family: minecraftia;
+    src: url(./src/Minecraftia-Regular.ttf);
+}
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    font-family: minecraftia;
+    font-size: 12;
+    color: black;
+}
+.ascendant-logo {
+    z-index: 999;
+    position: static;
+    left: 10%;
+    top: 400px;
+    width: 60%;
+    height: 300px;
+}
+.main-background {
+    z-index: -998;
+    background-image: url(./src/background.png);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.main-background-overlay {
+    z-index: -997;
+    background-image: 
+        linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), 
+        linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), 
+        linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    width: 100%;
+    height: 100%;
+}
+.box {
+    border-image-slice: 16 16 16 16; 
+    border-image-width: 16px 16px 16px 16px; 
+    border-image-outset: 0px 0px 0px 0px; 
+    border-image-repeat: repeat repeat; 
+    border-image-source: url(src/box-border.png);
+    border-style: solid;
+}
+.updates {
+    background-color: rgba(0,0,0,0);
+    padding: 0px;
+    position: absolute;
+    left: 12.5%;
+    top: 700px;
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+    z-index: 1;
+    padding: 13px;
+}
+.updates-container {
+    background-color: whitesmoke;
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    height: auto;
+    border-radius: 0px;
+    z-index: 0;
+    padding: 20px;
+}
+.list-item {
+    background-color: rgba(130, 160, 0, 1);
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid rgba(99, 121, 0, 1);
+    border-right: 1px solid rgba(99, 121, 0, 1);
+    position: relative;
+}
+.list-container {
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: 400px;
+    left: 25%;
+    padding: 13px;
+}
+.discord {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 70%;
+    top: 200px;
+    z-index: 997;
+    font-size: 24px;
+    padding: 13px;
+}
+.discord-overlay {
+    background-color: rgba(130, 160, 0, 1);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width: 1000px) {
+    .ascendant-logo {
+        z-index: 999;
+        position: static;
+        left: 10%;
+        top: 400px;
+        width: 60%;
+        height: 150px;
+    }
+}
+a {
+    color: black;
+}
+.update {
+    border-color: rgba(200, 200, 200, 1);
+    background-color: rgba(240, 240, 240, 1);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    width: auto;
+    position: relative;
+    left: 0px;
+    top: 25px;
+    padding: 20px;
+    margin: 20px;;
+}
