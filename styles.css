@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.twitter {
+    color: #5895fe;
+}
+
+.navitem {
+    font-size: 25px;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.discord {
+    width: 25px;
+    height: auto;
+}
