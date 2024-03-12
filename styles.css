@@ -94,7 +94,7 @@ body {
 }
 
 @media only screen and (min-width: 1279px) {
-    .desktop {
+    .mobile {
         display: none;
     }
 }
