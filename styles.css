@@ -86,3 +86,9 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
+@media only screen and (max-width: 1026px) {
+    .desktop {
+        display: none;
+    }
+}
