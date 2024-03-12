@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikaahhh's Website | About Me</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pikaahhh | About Me</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="functions.js"></script>
 </head>
 <body>
-    <div class="w3-bar w3-border w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white"><i class="fa fa-home icon"></i></a>
-        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Link 1</a>
-        <a href="https://twitter.com/pikaaaahhhh" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-right"><i class="fa fa-twitter twitter icon"></i></a>
-        <button onclick="copyText()" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white w3-right"><img class="discord "src="discord.png"></button>
+    <div id="action" style="display: none; transition: 0.5s" class="w3-display-container w3-display-topmiddle alert w3-margin-top">
+        <h7 style="width: 400px; text-align: center;" class="w3-display-middle w3-text-white">Copied Discord Tag to Clipboard!</h7>
+        <h7 onclick="hideAlert()" class="w3-hover-text-red w3-display-right w3-text-white w3-margin-right">✖</h7>
+    </div>
+    <div class="w3-display-container w3-display-middle" style="width: 650px;">
+        <div style="font-size: 25px;" class="w3-center w3-text-white"><b>My Stuff</b></div><br>
+        <div class="w3-row">
+            <a href="https://twitter.com/pikaaaahhhh"><button class="glow-on-hover" type="button">Twitter</button></a>
+            <a href="https://hypixel.net/members/pika.6304350/"><button class="glow-on-hover" type="button">Forums</button></a>
+            <a onclick="copyText()"><button class="glow-on-hover" type="button">Discord</button></a>
+            <a href="https://sky.shiiyu.moe/stats/Pikaahhh/Banana"><button class="glow-on-hover" type="button">Skycrypt</button></a>
+            <a href="suggestionList.html"><button class="glow-on-hover" type="button">Suggestions</button></a>
+        </div>
     </div>
 </body>
+<script>
+    function copyText() {
+        navigator.clipboard.writeText("pikaahhh");
+        document.getElementById("action").style.display = "block";
+    }
+
+    function hideAlert() {
+        document.getElementById("action").style.display = "none";
+    }
+</script>
 </html>
-
-
